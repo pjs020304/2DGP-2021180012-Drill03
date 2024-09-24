@@ -48,7 +48,7 @@ def run_bottom2():
     cy=100
     while cx<=400:
         draw_base(cx,cy)
-        cx+=1
+        cx+=2
     pass
 def run_triright():
     cx=800
@@ -91,8 +91,8 @@ def run_triangle():
 
 
 while True:
-    #run_circle()
-    #run_rectangle()
+    run_circle()
+    run_rectangle()
     run_triangle()
     
 close_canvas()
