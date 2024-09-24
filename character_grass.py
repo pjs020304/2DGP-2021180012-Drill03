@@ -68,7 +68,7 @@ def run_circle():
     for theta in range(270,630):
         x = cx+r*math.cos(math.radians(theta))
         y = cy+r*math.sin(math.radians(theta))
-        draw_base(cx,cy)
+        draw_base(x,y)
     pass
 
 while True:
