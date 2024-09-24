@@ -3,17 +3,17 @@ from pico2d import *
 open_canvas()
 
 def run_rectangle():
-    clear_canvas()
-
+    print('RECTANGLE')
+    pass
 def run_circle():
-    clear_canvas()
-
+    print('CIRCLE')
+    pass
 
 grass = load_image('grass.png')
 boy = load_image('character.png')
 
 while True:
-    run_rectangle()
     run_circle()
+    run_rectangle()
     
 close_canvas()
