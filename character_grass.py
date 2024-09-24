@@ -50,7 +50,20 @@ def run_bottom2():
         draw_base(cx,cy)
         cx+=1
     pass
-
+def run_triright():
+    cx=800
+    cy=100
+    while cy<600:
+        draw_base(cx, cy)
+        cx -= 4/5
+        cy +=1
+def run_trileft():
+    cx=400
+    cy=600
+    while cy>100:
+        draw_base(cx,cy)
+        cx -= 4/5
+        cy -=1
 def run_rectangle():
     print('RECTANGLE')
     run_bottom1()
@@ -70,9 +83,16 @@ def run_circle():
         y = cy+r*math.sin(math.radians(theta))
         draw_base(x,y)
     pass
+def run_triangle():
+    run_bottom1()
+    run_triright()
+    run_trileft()
+    run_bottom2()
+
 
 while True:
-    run_circle()
-    run_rectangle()
+    #run_circle()
+    #run_rectangle()
+    run_triangle()
     
 close_canvas()
